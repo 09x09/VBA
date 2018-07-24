@@ -118,18 +118,22 @@ I would get an error, since the maximum value of an `Integer` is 32,767 , but I 
 	<tr>
 		<td> + </td>
 		<td> Addition </td>
+		<td></td>
 	</tr>
 	<tr>
 		<td> - </td>
 		<td> Subtraction </td>
+		<td></td>
 	</tr>
 	<tr>
 		<td> * </td>
 		<td> Multiplication</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td> / </td>
 		<td> Division </td>
+		<td></td>
 	</tr>
 	<tr>
 		<td> \ </td>
@@ -144,6 +148,7 @@ I would get an error, since the maximum value of an `Integer` is 32,767 , but I 
 	<tr>
 		<td> ^ </td>
 		<td> Exponentiation </td>
+		<td></td>
 	</tr>
 	
 </table>
