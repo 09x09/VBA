@@ -109,10 +109,36 @@ I would get an error, since the maximum value of an `Integer` is 32,767 , but I 
 
 #### Arithmetic
 
-|Operator|Description|Example|
-|:---:|:---:|:---:|
-|+|Addition|2 + 3 = 5|
+<table style="width:100%">
+	<tr>
+		<th>Operator</th>
+		<th>Description</th>
+		<th>Example</th>
+	</tr>
+	<tr>
+		<td> + </td>
+		<td> Addition </td>
+		<td> 1 + 1 = 2 </td>
+	</tr>
+	
+</table>
 
+#### Logical
 
-
+<table style="width:100%">
+	<tr>
+		<th>Operator</th>
+		<th>Description</th>
+		<th>Example</th>
+	</tr>
+	<tr>
+		<td> AND </td>
+		<td> AND boolean </td>
+		<td> - True AND True is True\n
+			 - True AND False is False
+			 - False AND False is False
+		</td>
+	</tr>
+	
+</table>
 
