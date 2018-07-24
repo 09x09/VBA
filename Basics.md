@@ -113,6 +113,7 @@ I would get an error, since the maximum value of an `Integer` is 32,767 , but I 
 	<tr>
 		<th>Operator</th>
 		<th>Description</th>
+		<th>Examples(where necessary)</th>
 	</tr>
 	<tr>
 		<td> + </td>
@@ -133,10 +134,12 @@ I would get an error, since the maximum value of an `Integer` is 32,767 , but I 
 	<tr>
 		<td> \ </td>
 		<td> Floor division </td>
+		<td> 5 \ 2 = 2</td>
 	</tr>
 	<tr>
 		<td> % </td>
 		<td> Modulo (Remainder function) </td>
+		<td> 5 & 2 = 1 </td>
 	</tr>
 	<tr>
 		<td> ^ </td>
