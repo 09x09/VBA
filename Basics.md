@@ -74,11 +74,13 @@
 ### Variables
 #### Declaring Variables
 
-Because VBA is a pretty old language, the type of each variable has to be declared along with it's name, like so
+Because VBA is a pretty old language, the type of each variable has to be declared along with it's name, like so:
 
 ```
 Dim <name> as <type>
 ```
+
+It's good practice to use meaningful variable names. For example, `a` is a poor variable name, while something like `car_speed` is much better as it tells you what the variable is used for
 
 #### Assigning variables
 
@@ -94,7 +96,9 @@ Keep in mind you cannot assign a value which is of a different type to a declare
 ```
 SomeNumber = "Hi"
 ```
-will return an error as "Hi" is of type String and not Integer
+will return an error as "Hi" is of type `String` and not `Integer`
+
+
 
 
 
