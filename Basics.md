@@ -113,12 +113,34 @@ I would get an error, since the maximum value of an `Integer` is 32,767 , but I 
 	<tr>
 		<th>Operator</th>
 		<th>Description</th>
-		<th>Example</th>
 	</tr>
 	<tr>
 		<td> + </td>
 		<td> Addition </td>
-		<td> 1 + 1 = 2 </td>
+	</tr>
+	<tr>
+		<td> - </td>
+		<td> Subtraction </td>
+	</tr>
+	<tr>
+		<td> * </td>
+		<td> Multiplication</td>
+	</tr>
+	<tr>
+		<td> / </td>
+		<td> Division </td>
+	</tr>
+	<tr>
+		<td> \ </td>
+		<td> Floor division </td>
+	</tr>
+	<tr>
+		<td> % </td>
+		<td> Modulo (Remainder function) </td>
+	</tr>
+	<tr>
+		<td> ^ </td>
+		<td> Exponentiation </td>
 	</tr>
 	
 </table>
@@ -129,15 +151,10 @@ I would get an error, since the maximum value of an `Integer` is 32,767 , but I 
 	<tr>
 		<th>Operator</th>
 		<th>Description</th>
-		<th>Example</th>
 	</tr>
 	<tr>
 		<td> AND </td>
-		<td> AND boolean </td>
-		<td> - True AND True is True\n
-			 - True AND False is False
-			 - False AND False is False
-		</td>
+		<td> Returns True ONLY IF all statements are true </td>
 	</tr>
 	
 </table>
