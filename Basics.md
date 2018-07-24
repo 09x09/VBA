@@ -1,6 +1,6 @@
 # <span style="color:blue">VBA - Basics</span>
 
-#### Data types
+### Data types
 
 #### Numeric
 
