@@ -206,3 +206,31 @@ I would get an error, since the maximum value of an `Integer` is 32,767 , but I 
 	
 </table>
 
+#### Concatenation
+
+
+
+<table style="width:100%">
+	<tr>
+		<th>Operator</th>
+		<th>Examples</th>
+	</tr>
+	<tr>
+		<td> + </td>
+		<td> Avoid using if possible as it uses the same symbol as the addition operator </td>
+	</tr>
+	<tr>
+		<td rowspan=4> & </td>
+		<td> 1 & 2 = "12" </td>
+	</tr>
+	<tr>
+		<td> "1" & 2 = "12"</td>
+	</tr>
+	<tr> 
+		<td>1 & "Hello" = "1Hello"</td>
+	</tr>
+	<tr>
+		<td> "Hello" & "World" = "HelloWorld" </td>
+	</tr>
+	
+</table>
