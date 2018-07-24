@@ -98,6 +98,14 @@ SomeNumber = "Hi"
 ```
 will return an error as "Hi" is of type `String` and not `Integer`
 
+For numeric values, keep in mind the range limits of each type. Using the previous example, if I tried to do:
+
+```
+SomeNumber = 100000
+```
+
+I would get an error, since the maximum value of an `Integer` is 32,767 , but I am trying to assign a value of 100000 to it
+
 
 
 
