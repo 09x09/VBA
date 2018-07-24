@@ -1,6 +1,4 @@
-# <span style="color:blue">VBA - a crash course</span>
-
-### Basics
+# <span style="color:blue">VBA - Basics</span>
 
 #### Data types
 
@@ -104,7 +102,7 @@ For numeric values, keep in mind the range limits of each type. Using the previo
 SomeNumber = 100000
 ```
 
-I would get an error, since the maximum value of an `Integer` is 32,767 , but I am trying to assign a value of 100000 to it
+I would get an error, since the maximum value of an `Integer` is 32,767 , but I am trying to assign a value of 100,000 to it
 
 
 
