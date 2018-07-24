@@ -105,6 +105,14 @@ SomeNumber = 100000
 I would get an error, since the maximum value of an `Integer` is 32,767 , but I am trying to assign a value of 100,000 to it
 
 
+### Operators
+
+#### Arithmetic
+
+|Operator|Description|Example|
+|:---:|:---:|:---:|
+|+|Addition|2 + 3 = 5|
+
 
 
 
