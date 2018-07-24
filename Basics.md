@@ -153,6 +153,33 @@ I would get an error, since the maximum value of an `Integer` is 32,767 , but I 
 	
 </table>
 
+#### Comparison
+
+<table style="width:100%">
+	<tr>
+		<th>Operator</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td> = </td>
+		<td> Equal to </td>
+	</tr>
+	<tr>
+		<td> &lt; &gt; </td>
+		<td> Not equal to (!= in other languages) </td>
+	</tr>
+	<tr>
+		<td> > / >= </td>
+		<td> Greater than / Greater than or equal to </td>
+	</tr>
+	<tr>
+		<td> &lt; / &lt;= </td>
+		<td> Less than / Less than or equal to </td>
+	</tr>	
+	
+</table>
+
+
 #### Logical
 
 <table style="width:100%">
@@ -162,8 +189,20 @@ I would get an error, since the maximum value of an `Integer` is 32,767 , but I 
 	</tr>
 	<tr>
 		<td> AND </td>
-		<td> Returns True ONLY IF all statements are true </td>
+		<td> Returns True if all statements are true </td>
 	</tr>
+	<tr>
+		<td> OR </td>
+		<td> Returns True if <b>ANY</b> statement is true </td>
+	</tr>
+	<tr>
+		<td> NOT </td>
+		<td> Returns True if no statements are true </td>
+	</tr>
+	<tr>
+		<td> XOR </td>
+		<td> Returns True if <b>ONE</b> statement is true </td>
+	</tr>	
 	
 </table>
 
