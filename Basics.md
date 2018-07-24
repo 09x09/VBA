@@ -6,18 +6,6 @@
 
 #### Numeric
 
-<style>
-	td, th {
-		border: 1px solid #dddddd;
-		text-align: center;
-		padding: 10px;
-	}
-	
-	tr:nth-child(even) {
-		background-color: #dddddd;
-	}	
-</style>
-
 <table style="width:100%">
 	<tr>
 		<th> Type </th>
