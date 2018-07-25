@@ -2,10 +2,16 @@
 
 ### Table of Contents
 
-2.1 [Variables](#2.1)
-2.2 [Data Types](#2.2)
-2.3 [Operators](#2.3)
-2.4 [Functions/Subs](#2.4)
+1. [Introduction](#1)
+2. [Basic Syntax Reference](#2)
+	2.1 [Variables](#2.1)
+	2.2 [Data Types](#2.2)
+	2.3 [Operators](#2.3)
+	2.4 [Functions/Subs](#2.4)
+
+## Introduction <a name="1"></a>
+	
+## Basic Syntax Reference <a name="2"></a>
 
 ### 2.1 Variables <a name="2.1"></a>
 #### Declaring Variables
