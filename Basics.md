@@ -316,12 +316,12 @@ Declaring a sub is similar to a function, as so:
 ```vb
 1. Sub Distance(v as Double, t as Double)
 2.
-3. 	MagBox = v * t 
+3. 	MsgBox = v * t 
 4.
 5. End Sub
 ```
 
-*the MagBox function produces a popup box with a value in it
+*the MsgBox function produces a message box with a value in it
 
 #### Calling a function
 
@@ -331,7 +331,7 @@ Now that you have your brand new, shiny function, all you have to do is to call 
 1. Dim s as Double
 2. 
 3. s = Distance(2 , 5) + 5
-4. MagBox s
+4. MsgBox s
 ```
 
 The above code sets the value of `s` to the return value of `Distance` with input arguments `v = 2` and `t = 5` added to 5.
