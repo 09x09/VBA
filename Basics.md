@@ -290,7 +290,7 @@ Finally, you end the function with `End Function` as per Line 5
 
 Declaring a sub is similar to a function, as so;
 
-````vb
+```vb
 1. Sub Distance(v as Double, t as Double) as Double
 2.
 3. 	Distance = v * t 
