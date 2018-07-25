@@ -277,16 +277,26 @@ Let's do a simple example, say I want to calculate the distance travelled by a c
 ```
 1. Function Distance(v as Double, t as Double) as Double
 2.
-3. Distance = v * t 
+3. 	Distance = v * t 
 4.
 5. End Function
 ```
 
 As you can see, there are 3 parts to a function. In Line 1, you give the function a name, `Distance` and give it the arguments required to calculate the value, `v` and `t`
 
-In Line 3, you define the code required to calculate the distance, `v * t`
+In Line 3, you define the code required to calculate the distance, `v * t`. The indentation here is not necessary but it is good practice for code readability.
 
 Finally, you end the function with `End Function` as per Line 5
+
+Declaring a sub is similar to a function, as so;
+
+````
+1. Sub Distance(v as Double, t as Double) as Double
+2.
+3. 	Distance = v * t 
+4.
+5. End Sub
+```
 
 #### Calling a function/sub
 
