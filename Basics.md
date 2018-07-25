@@ -2,8 +2,12 @@
 
 ### Table of Contents
 
+2.1 [Variables](#2.1)
+2.2 [Data Types](#2.2)
+2.3 [Operators](#2.3)
+2.4 [Functions/Subs](#2.4)
 
-### 2.1 Variables
+### 2.1 Variables <a name="2.1"></a>
 #### Declaring Variables
 
 Because VBA is a pretty old language, the type of each variable has to be declared along with it's name, like so:
@@ -39,7 +43,7 @@ SomeNumber = 100000
 I would get an error, since the maximum value of an `Integer` is 32,767 , but I am trying to assign a value of 100,000 to it
 
 
-### 2.2 Data types
+### 2.2 Data types <a name="2.2"></a>
 
 Here is a list of the different data types supported by VBA! For day to day use you will not need to use most of these so don't worry if it looks complicated!
 
@@ -122,7 +126,7 @@ You will most commonly use these data type so be familiar with them!
 </table>
 
 
-### 2.3 Operators
+### 2.3 Operators <a name="2.3"></a>
 
 #### Arithmetic
 
@@ -252,7 +256,7 @@ You will most commonly use these data type so be familiar with them!
 	
 </table>
 
-### 2.4 Functions and Subs
+### 2.4 Functions and Subs <a name="2.4"></a>
 
 Functions and subs(subroutines) make life easier by allowing you to reuse lines of code in different places instead of having to type out the full code each time
 
