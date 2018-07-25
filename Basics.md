@@ -1,16 +1,29 @@
 # <span style="color:blue">VBA - Basics</span>
 
+Author : 09x09
+
+Learning how to program is always easiest when you have something to practice with! Don't just read this like a textbook cos it's not going to end well~
+
+----
+
 ### Table of Contents
 
 1. [Introduction](#1)
-2. [Basic Syntax Reference](#2)<br>
-    2.1 [Variables](#2.1) <br>
-    2.2 [Data Types](#2.2) <br>
-    2.3 [Operators](#2.3) <br>
-    2.4 [Functions/Subs](#2.4)
+
+2. [Basic Syntax Reference](#2)
+    2.1 [Variables](#2.1) 
+    2.2 [Data Types](#2.2) 
+    2.3 [Operators](#2.3)
+    2.4 [Functions/Subs](#2.4) 
+
+    2.5 [Loops](#2.5) 
+
+    2.6 [Conditionals](#2.6)
 
 ## Introduction <a name="1"></a>
-	
+
+VBA is a really powerful tool in Excel. It allows you to automate long tedious tasks like moving data and fixing poor data entry practices *cough cough* as well as create user interaction with your spreadsheets. With how prevalent Excel use is it is definitely a worthwhile language to pick up!
+
 ## Basic Syntax Reference <a name="2"></a>
 
 ### 2.1 Variables <a name="2.1"></a>
@@ -54,7 +67,7 @@ I would get an error, since the maximum value of an `Integer` is 32,767 , but I 
 Here is a list of the different data types supported by VBA! For day to day use you will not need to use most of these so don't worry if it looks complicated!
 
 You will most commonly use these data type so be familiar with them!
-`String` `Long` `Boolean` `Single`
+`String` `Long` `Boolean` `Double`
 
 #### Numeric
 
@@ -309,4 +322,42 @@ Now that you have your brand new, shiny function, all you have to do is to call 
 ```
 
 The above code sets the value of `s` to the return value of `Distance` with input arguments `v = 3` and `t = 5`. Therefore the expected value of `s` would be 15
+
+
+
+### 2.5 Loops <a name="2.5"></a>
+
+Loops are used  when you want to repeat a task for a fixed number of times or until some condition is fulfilled
+
+#### For Loops
+
+For loops will perform a task for a set number of times
+
+#### While Loops
+
+While loops will perform a task while some condition remains `True` 
+
+#### Nested Loops
+
+Loops can also be nested, as shown below:
+
+### 2.6 Conditionals <a name="2.6"></a>
+
+Conditionals, as the name suggests, allows you to run a piece of code only when certain conditions are fulfilled. This is the basic structure of a conditional:
+
+```vb
+1.If [condition1] Then
+2.   
+3.   <your code here>
+4.    
+5.ElseIf [condition2] Then
+6.   
+7.    <more code>
+8.    
+9.Else
+10.    
+11.    <even more code>
+12.    
+13.End If
+```
 
