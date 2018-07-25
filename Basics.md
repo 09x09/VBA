@@ -311,7 +311,7 @@ In Line 3, you define the code required to calculate the distance, `v * t`. The 
 
 Finally, you end the function with `End Function` as per Line 5
 
-Declaring a sub is similar to a function, as so;
+Declaring a sub is similar to a function, as so:
 
 ```vb
 1. Sub Distance(v as Double, t as Double)
@@ -320,6 +320,8 @@ Declaring a sub is similar to a function, as so;
 4.
 5. End Sub
 ```
+
+*the MagBox function produces a popup box with a value in it
 
 #### Calling a function
 
