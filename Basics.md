@@ -256,7 +256,9 @@ You will most commonly use these data type so be familiar with them!
 
 Functions and subs(subroutines) make life easier by allowing you to reuse lines of code in different places instead of having to type out the full code each time
 
-Functions are different from subs in that functions have a return value, while subs do not. This means that you can feed the output value of a function into another function, unlike for a sub.
+Functions are different from subs in that functions have a return value, while subs do not. This means that you can feed the output value of a function into another function
+
+Subs are used when you want Excel to do something
 
 #### Declaring a function/sub
 
