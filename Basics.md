@@ -24,9 +24,15 @@ Learning how to program is always easiest when you have something to practice wi
 
     2.6 [Conditionals](#2.6)
 
+    2.7 [Arrays](#2.7)
+
+    2.8 [Strings](#2.8)
+
 ## Introduction <a name="1"></a>
 
 VBA is a really powerful tool in Excel. It allows you to automate long tedious tasks like moving data and fixing poor data entry practices *cough cough* as well as create user interaction with your spreadsheets. With how prevalent Excel use is it is definitely a worthwhile language to pick up!
+
+
 
 ## Basic Syntax Reference <a name="2"></a>
 
@@ -308,24 +314,37 @@ Finally, you end the function with `End Function` as per Line 5
 Declaring a sub is similar to a function, as so;
 
 ```vb
-1. Sub Distance(v as Double, t as Double) as Double
+1. Sub Distance(v as Double, t as Double)
 2.
-3. 	Distance = v * t 
+3. 	MagBox = v * t 
 4.
 5. End Sub
 ```
 
-#### Calling a function/sub
+#### Calling a function
 
 Now that you have your brand new, shiny function, all you have to do is to call it in your code!
 
 ```vb
 1. Dim s as Double
 2. 
-3. s = Distance(3 , 5)
+3. s = Distance(2 , 5) + 5
+4. MagBox s
 ```
 
-The above code sets the value of `s` to the return value of `Distance` with input arguments `v = 3` and `t = 5`. Therefore the expected value of `s` would be 15
+The above code sets the value of `s` to the return value of `Distance` with input arguments `v = 2` and `t = 5` added to 5.
+
+
+
+#### Calling a sub
+
+Place a command button on your worksheet and add the following lines to it
+
+```vb
+1. Distance 2 , 5
+```
+
+This should produce the following when the button is clicked
 
 
 
@@ -335,15 +354,65 @@ Loops are used  when you want to repeat a task for a fixed number of times or un
 
 #### For Loops
 
-For loops will perform a task for a set number of times
+For loops will perform a task for a set number of times. This is the structure of a for loop:
+
+```vb
+1.Dim i as Integer
+2.
+3.For i = 1 to 10
+4.	<some code> 
+5.Next i
+```
+
+
 
 #### While Loops
 
-While loops will perform a task while some condition remains `True` 
+While loops will perform a task while some condition remains `True` . This is the structure of a while loop:
+
+```vb
+1.Dim i as Integer
+2.i = 1
+3.
+4.Do While i < 10
+5.	<some code>
+6.	i = i + 1
+7.Loop
+```
+
+Here is another version of the while loop:
+
+```vb
+1.Dim x as Boolean
+2.x = True
+3.
+4.Do While x = True
+5.	<some code>
+6.	If [conditional] Then
+7.        x = False
+8.  End If
+9.Loop    
+```
+
+
 
 #### Nested Loops
 
 Loops can also be nested, as shown below:
+
+```vb
+1.Dim i, j as Integer
+2.i, j = 1
+3.
+4.Do While i < 10
+5.	For j = 1 to 10    
+6.		<some code>
+7.	Next j
+8.	i = i + 1
+9.Loop
+```
+
+
 
 ### 2.6 Conditionals <a name="2.6"></a>
 
@@ -365,3 +434,26 @@ Conditionals, as the name suggests, allows you to run a piece of code only when 
 13.End If
 ```
 
+
+
+### 2.7 Arrays<a name="2.7"></a>
+
+Arrays are collections of objects. Arrays can be static or dynamic, and can also be nested (multi dimensional)
+
+#### Static Arrays
+
+This is how you declare a static array!
+
+```vb
+1.Dim Cars(1 to 5) as String
+2.
+3.
+```
+
+
+
+#### Dynamic Arrays
+
+
+
+### 2.8 Strings<a name="2.8"></a>
