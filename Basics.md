@@ -28,21 +28,21 @@ It's good practice to use meaningful variable names. For example, `a` is a poor 
 
 After you have declared a variable, you can assign a value to it!
 
-```
+```vb
 Dim SomeNumber As Integer
 SomeNumber = 5
 ```
 
 Keep in mind you cannot assign a value which is of a different type to a declared variable. For example, in the example above trying to do
 
-```
+```vb
 SomeNumber = "Hi"
 ```
 will return an error as "Hi" is of type `String` and not `Integer`
 
 For numeric values, also note the range limits of each type. Using the previous example, if I tried to do:
 
-```
+```vb
 SomeNumber = 100000
 ```
 
@@ -274,7 +274,7 @@ Subs are used when you want Excel to do something
 
 Let's do a simple example, say I want to calculate the distance travelled by a car
 
-```
+```vb
 1. Function Distance(v as Double, t as Double) as Double
 2.
 3. 	Distance = v * t 
@@ -290,7 +290,7 @@ Finally, you end the function with `End Function` as per Line 5
 
 Declaring a sub is similar to a function, as so;
 
-````
+````vb
 1. Sub Distance(v as Double, t as Double) as Double
 2.
 3. 	Distance = v * t 
@@ -302,7 +302,7 @@ Declaring a sub is similar to a function, as so;
 
 Now that you have your brand new, shiny function, all you have to do is to call it in your code!
 
-```
+```vb
 1. Dim s as Double
 2. 
 3. s = Distance(3 , 5)
