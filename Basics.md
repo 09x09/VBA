@@ -276,4 +276,15 @@ In Line 3, you define the code required to calculate the distance, `v * t`
 
 Finally, you end the function with `End Function` as per Line 5
 
+#### Calling a function/sub
+
+Now that you have your brand new, shiny function, all you have to do is to call it in your code!
+
+```
+1. Dim s as Double
+2. 
+3. s = Distance(3 , 5)
+```
+
+The above code sets the value of `s` to the return value of `Distance` with input arguments `v = 3` and `t = 5`. Therefore the expected value of `s` would be 15
 
