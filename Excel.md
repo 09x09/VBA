@@ -37,20 +37,24 @@ Relative referencing in R1C1 is represented by square brackets `[]` around the n
 
 #### Referencing
 
-|                    | Example Code                                         |
-| ------------------ | ---------------------------------------------------- |
-| Range()            | `Range("A1")` | `Range("A1:D5") `                    |
-| Cells(Row, Column) | `Cells(1,1)` | `Cells(1, "A")` both refer to cell A1 |
+|            |                    | Example Code     |
+| ---------- | ------------------ | ---------------- |
+| Many Cells | Range()            | `Range("A1:D4")` |
+| One Cell   | Cells(Row, Column) | `Cells(1,1)`     |
 
 
 
 #### Properties
 
-| Property  | Example Code                                     |
-| --------- | ------------------------------------------------ |
-| Value     | `Cell(1,1).Value = 5`  sets the value of A1 to 5 |
-| Font size | `Cell(1,1).Font.Size = 14`se                     |
-| Font name | `Cell(1,1).Font.Name = "Arial"`                  |
+| Property       | Example Code                                     |
+| -------------- | ------------------------------------------------ |
+| Value          | `Cell(1,1).Value = 5`  sets the value of A1 to 5 |
+| Fill Color     | `Cell(1,1).Interior.Color = RGB(255, 255, 0)`    |
+| Font size      | `Cell(1,1).Font.Size = 14`                       |
+| Font name      | `Cell(1,1).Font.Name = "Arial"`                  |
+| Formula        | `Cell(1,1).Formula= "=A2*10"`                    |
+| Formula (R1C1) | `Cell(1,1).FormulaR1C1="=R2C1*10"`               |
+|                |                                                  |
 
 
 
