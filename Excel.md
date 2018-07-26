@@ -17,17 +17,9 @@ Author: 09x09
 
 1. Terminology
 
-2. Objects
+2. [~~Basic~~ Syntax Reference](#2)
 
-3. [~~Basic~~ Syntax Reference](#3)
-
-   3.1[Workspace](#3.1)
-
-   3.2[Worksheet](#3.2)
-
-   3.3[Cells](#3.3)
-
-   3.4[UserForms](#3.4)
+   
 
 ## 1. Terminology <a name="1"></a>
 
@@ -39,35 +31,26 @@ Relative referencing in R1C1 is represented by square brackets `[]` around the n
 
 
 
-## 2. Objects <a name="2"></a>
+## 2. ~~Basic~~ Syntax Reference<a name="2"></a>
 
-#### What is an object?
+### Cells
 
-An object is an identifier for a collection of methods and properties. Properties describe the object, while methods are functions which belong to the object. Referring to these methods and properties is done through the use of `.`, as in `Object.property` or `Object.method`
+#### Referencing
 
-For example, let's say we have a `Car` object. A property of this `Car`object might be it's `color` . So `Car.color` will refer to the color of our `Car`
-
-A method of our `Car` might be the function `Distance(v,t)` which returns the distance travelled by the car. So if we want to call this method for a car travelling at `v = 10` for `t = 1`  we will call `Car.Distance(10, 1)`
-
-
-
-## 3. ~~Basic~~ Syntax Reference<a name="3"></a>
-
-### 3.1 Workbook<a name="3.1"></a>
-
-### 3.2 Worksheet<a name="3.2"></a>
-
-### 3.3 Cells<a name="2.3"></a>
-
-#### Cell Referencing
+|                    | Example Code                                         |
+| ------------------ | ---------------------------------------------------- |
+| Range()            | `Range("A1")` | `Range("A1:D5") `                    |
+| Cells(Row, Column) | `Cells(1,1)` | `Cells(1, "A")` both refer to cell A1 |
 
 
 
+#### Properties
+
+| Property  | Example Code                                     |
+| --------- | ------------------------------------------------ |
+| Value     | `Cell(1,1).Value = 5`  sets the value of A1 to 5 |
+| Font size | `Cell(1,1).Font.Size = 14`se                     |
+| Font name | `Cell(1,1).Font.Name = "Arial"`                  |
 
 
-`
-
-
-
-### 3.4 UserForms<a name="3.4"></a>
 

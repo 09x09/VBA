@@ -28,6 +28,8 @@ Learning how to program is always easiest when you have something to practice wi
 
     2.8 [Strings](#2.8)
 
+    2.9 [Objects](#2.9)
+
 ## Introduction <a name="1"></a>
 
 VBA is a really powerful tool in Excel. It allows you to automate long tedious tasks like moving data and fixing poor data entry practices *cough cough* as well as create user interaction with your spreadsheets. With how prevalent Excel use is it is definitely a worthwhile language to pick up!
@@ -396,7 +398,7 @@ Here is another version of the while loop:
 9.Loop    
 ```
 
-
+Note that the line right before `Loop` acts as the control for the loop condition. If this part is missing the loop becomes an infinite loop
 
 #### Nested Loops
 
@@ -436,6 +438,8 @@ Conditionals, as the name suggests, allows you to run a piece of code only when 
 13.End If
 ```
 
+`ElseIf` statements are completely optional. Furthermore, there is no limit to the number of `ElseIf` statements you can have in a conditional
+
 
 
 ### 2.7 Arrays<a name="2.7"></a>
@@ -444,18 +448,50 @@ Arrays are collections of objects. Arrays can be static or dynamic, and can also
 
 #### Static Arrays
 
-This is how you declare a static array!
+This is how you declare a static array as well as store values in it!
 
 ```vb
 1.Dim Cars(1 to 5) as String
 2.
-3.
+3.Cars(1) = "Honda"
+4.Cars(2) = "Toyota"
+5.Cars(3) = "McLaren"
+etc
 ```
 
 
 
 #### Dynamic Arrays
 
+Dynamic arrays work like static arrays, except that their size is not fixed. This is how you declare a dynamic array!
+
+```vb
+1.Dim Cars() as String
+```
+
+To resize a dynamic array we use the `ReDim` function
+
+```vb
+1.ReDim Cars(4)
+```
+
 
 
 ### 2.8 Strings<a name="2.8"></a>
+
+Strings are expressions enclosed within quotation marks `"`. Strings can include numbers as well as symbols. So `"1"` is a string, but `1` is not.
+
+### 2.9 Objects <a name="2.9"></a>
+
+An object is an identifier for a collection of methods and properties. Properties describe the object, while methods are functions which belong to the object. Referring to these methods and properties is done through the use of `.`, as in `Object.property` or `Object.method`
+
+For example, let's say we have a `Car` object. A property of this `Car`object might be it's `color` . So `Car.color` will refer to the color of our `Car`
+
+A method of our `Car` might be the function `Distance(v,t)` which returns the distance travelled by the car. So if we want to call this method for a car travelling at `v = 10` for `t = 1`  we will call `Car.Distance(10, 1)`
+
+Objects can be nested within other objects as well!
+
+#### Objects in Excel
+
+Almost everything in excel is an object, which is why this subsection is here
+
