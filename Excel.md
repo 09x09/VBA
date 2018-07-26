@@ -58,3 +58,18 @@ Relative referencing in R1C1 is represented by square brackets `[]` around the n
 
 
 
+### Worksheet
+
+#### Methods
+
+| Method   | Explanation                  | Example Code                    |
+| -------- | ---------------------------- | ------------------------------- |
+| Activate | Selects the sheet `"Sheet1"` | `Worksheets("Sheet1").Activate` |
+| PrintOut | Prints a sheet               | `ActiveSheet.PrintOut`          |
+|          |                              |                                 |
+|          |                              |                                 |
+
+
+
+
+
