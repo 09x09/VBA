@@ -30,6 +30,10 @@ Learning how to program is always easiest when you have something to practice wi
 
     2.9 [Objects](#2.9)
 
+    2.10 [Numbers](#2.10)
+
+    
+
 ## Introduction <a name="1"></a>
 
 VBA is a really powerful tool in Excel. It allows you to automate long tedious tasks like moving data and fixing poor data entry practices *cough cough* as well as create user interaction with your spreadsheets. With how prevalent Excel use is it is definitely a worthwhile language to pick up!
@@ -233,7 +237,7 @@ Place a command button on your worksheet and add the following lines to it
 1. Distance 2 , 5
 ```
 
-This should produce the following when the button is clicked
+This should produce a message box with a value of 10 in it
 
 
 
@@ -430,4 +434,43 @@ Objects can be nested within other objects as well!
 #### Objects in Excel
 
 Almost everything in excel is an object, which is why this subsection is here
+
+
+
+### 2.10 Numbers<a name="2.10"></a>
+
+#### Floats
+
+A float is the decimal representation of a number. Integers can also be expressed as floats, for example, `1` is an integer while `1.0` is a float
+
+#### Floating point arithmetic
+
+Because memory is finite, and binary representations of some floats may not be, often times there will be a rounding error involved in storing the float.  As a result, you may not get expected results when performing some operations.
+
+For example, if you try to compare floats directly, often times you will not get the expected output. 
+
+```vb
+If 0.5-0.4-0.1 = 0 Then
+    MsgBox("True")
+    
+Else
+    MsgBox("False")
+    
+End If
+```
+
+Pasting the above into a command button will yield a message stating "False" instead of the expected "True"
+
+To get around this, modify the comparison to the one below:
+
+```vb
+If Abs(0.5-0.4-0.1 - 0) < 10^-6 Then
+
+```
+
+This will allow you to get expected results
+
+For more information on floating point arithmetic in excel 
+
+https://www.microsoft.com/en-us/microsoft-365/blog/2008/04/10/understanding-floating-point-precision-aka-why-does-excel-give-me-seemingly-wrong-answers/
 
