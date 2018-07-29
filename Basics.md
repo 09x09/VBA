@@ -83,49 +83,19 @@ You will most commonly use these data type so be familiar with them!
 
 #### Numeric
 
-<table style="width:100%">
-	<tr>
-		<th> Type </th>
-		<th> Range</th>
-	</tr>
-	<tr>
-		<td>  Byte </td>
-		<td> 0 - 255 </td>
-	</tr>
-	<tr>
-		<td>  Integer </td>
-		<td> -32,768 to 32,767 </td>
-	</tr>
-	<tr>
-		<td>  Long </td>
-		<td> -2,147,483,648 to 2,147,483,647(integer)  </td>
-	</tr>
-	<tr>
-		<td> LongLong (only on 64-bit systems)</td>
-		<td> -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807(integer)</td>
-	</tr>
-	<tr>
-		<td>LongPtr</td>
-		<td> Long on 32-bit, LongLong on 64-bit</td>
-	</tr>
-	<tr>
-		<td>  Single </td>
-		<td> &#177; -1.401298E-45  to &#177; 3.402823 x 10<sup>38</sup></td>
-	</tr>
-	<tr>
-		<td>  Double </td>
-		<td> &#177; 4.94065 x 10<sup>-324</sup> to &#177; 1.79769 x 10<sup>308</sup></td>
-	</tr>
-	<tr>
-		<td>  Currency </td>
-		<td> &#177; 922,337,203,685,477.5808  </td>
-	</tr>
-	<tr>
-		<td>  Decimal </td>
-		<td> &#177; 79,228,162,514,264,337,593,543,950,335 without decimal or up to 28 decimal places</td>
-	</tr>
+| Type                  | Range                                                        | Conversion |
+| --------------------- | ------------------------------------------------------------ | ---------- |
+| Byte                  | 0-255                                                        | `CByte`    |
+| Integer               | -32,768 to 32,767                                            | `CInt`     |
+| Long                  | -2,147,483,648 to 2,147,483,647(integer)                     | `CLng`     |
+| LongLong(only 64-bit) | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807(integer) |            |
+| LongPtr               | Long on 32-bit, LongLong on 64-bit                           |            |
+| Single                | &#177; -1.401298E-45  to &#177; 3.402823 x 10<sup>38         | `CSng`     |
+| Double                | &#177; 4.94065 x 10<sup>-324</sup> to &#177; 1.79769 x 10<sup>308 | `CDbl`     |
+| Currency              | &#177; 922,337,203,685,477.5808                              |            |
+| Decimal               | &#177; 79,228,162,514,264,337,593,543,950,335 without decimal or up to 28 decimal places | `CDec`     |
 
-</table>
+
 
 #### Non Numeric 
 
@@ -480,6 +450,20 @@ To resize a dynamic array we use the `ReDim` function
 ### 2.8 Strings<a name="2.8"></a>
 
 Strings are expressions enclosed within quotation marks `"`. Strings can include numbers as well as symbols. So `"1"` is a string, but `1` is not.
+
+#### String functions
+
+#### Extract values from strings
+
+| Function            | Example              | Expected Value |
+| ------------------- | -------------------- | -------------- |
+| Extract from left   | `Left("Apple",3)`    | "App"          |
+| Extract from right  | `Right("Apple",3)`   | "ple"          |
+| Extract from middle | `Mid("Apple", 2, 4)` | "ppl"          |
+
+
+
+
 
 ### 2.9 Objects <a name="2.9"></a>
 
