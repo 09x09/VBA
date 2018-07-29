@@ -2,7 +2,7 @@
 
 Author : 09x09
 
-Learning how to program is always easiest when you have something to practice with! Don't just read this like a textbook cos it's not going to end well~
+Learning how to program is always easiest when you have something to practice with! Don't just read this like a textbook cos it's not going to end well~ (Also because this guide does not include every function out there, only those I think would be most useful for day to day use)
 
 ----
 
@@ -95,138 +95,53 @@ You will most commonly use these data type so be familiar with them!
 | Currency              | &#177; 922,337,203,685,477.5808                              |            |
 | Decimal               | &#177; 79,228,162,514,264,337,593,543,950,335 without decimal or up to 28 decimal places | `CDec`     |
 
-
-
 #### Non Numeric 
 
-<table style="width:100%">
-	<tr>
-		<th> Type </th>
-		<th> Range</th>
-	</tr>
-	<tr>
-		<td> String </td>
-		<td> 0 - 2 billion characters </td>
-	</tr>
-	<tr>
-		<td> Boolean </td>
-		<td> True/False </td>
-	</tr>
-	<tr>
-		<td> Date </td>
-		<td> January 1, 100 to December 31, 9999 </td>
-	</tr>
-	<tr>
-		<td> Object </td>
-		<td> embedded objects </td>
-	</tr>
-	<tr>
-		<td> Variant </td>
-		<td> up to Double or String </td>
-	</tr>
-</table>
+| Type    | Range                               | Conversion |
+| ------- | ----------------------------------- | ---------- |
+| String  | 0 - 2billion characters             | `CStr`     |
+| Boolean | True/False                          | `CBool`    |
+| Date    | January 1, 100 to December 31, 9999 | `CDate`    |
+| Object  | embedded objects                    | `CObj`     |
+| Variant | up to Double or String              |            |
+
 
 
 ### 2.3 Operators <a name="2.3"></a>
 
 #### Arithmetic
 
-<table style="width:100%">
-	<tr>
-		<th>Operator</th>
-		<th>Description</th>
-		<th>Examples(where necessary)</th>
-	</tr>
-	<tr>
-		<td> + </td>
-		<td> Addition </td>
-		<td></td>
-	</tr>
-	<tr>
-		<td> - </td>
-		<td> Subtraction </td>
-		<td></td>
-	</tr>
-	<tr>
-		<td> * </td>
-		<td> Multiplication</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td> / </td>
-		<td> Division </td>
-		<td></td>
-	</tr>
-	<tr>
-		<td> \ </td>
-		<td> Floor division </td>
-		<td> 5 \ 2 = 2</td>
-	</tr>
-	<tr>
-		<td> % </td>
-		<td> Modulo (Remainder function) </td>
-		<td> 5 & 2 = 1 </td>
-	</tr>
-	<tr>
-		<td> ^ </td>
-		<td> Exponentiation </td>
-		<td></td>
-	</tr>
-	
-</table>
+| Operator | Description      | Examples(where necessary) |
+| -------- | ---------------- | ------------------------- |
+| +        | Addition         |                           |
+| -        | Subtraction      |                           |
+| *        | Multiplication   |                           |
+| /        | Division         |                           |
+| \        | Integer Division | 5 \ 2 = 2                 |
+| %        | Modulo           | 5 % 2 = 1                 |
+| ^        | Exponentiation   |                           |
 
 #### Comparison
 
-<table style="width:100%">
-	<tr>
-		<th>Operator</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td> = </td>
-		<td> Equal to </td>
-	</tr>
-	<tr>
-		<td> &lt; &gt; </td>
-		<td> Not equal to (!= in other languages) </td>
-	</tr>
-	<tr>
-		<td> > / >= </td>
-		<td> Greater than / Greater than or equal to </td>
-	</tr>
-	<tr>
-		<td> &lt; / &lt;= </td>
-		<td> Less than / Less than or equal to </td>
-	</tr>	
-	
-</table>
+| Operator | Description                             |
+| -------- | --------------------------------------- |
+| =        | Equal to                                |
+| <>       | Not Equal To                            |
+| > / >=   | Greater than / Greater than or equal to |
+| < / <=   | Less than / Less than or equal to       |
+
 
 
 #### Logical
 
-<table style="width:100%">
-	<tr>
-		<th>Operator</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td> AND </td>
-		<td> Returns True if all statements are true </td>
-	</tr>
-	<tr>
-		<td> OR </td>
-		<td> Returns True if <b>ANY</b> statement is true </td>
-	</tr>
-	<tr>
-		<td> NOT </td>
-		<td> Returns True if no statements are true </td>
-	</tr>
-	<tr>
-		<td> XOR </td>
-		<td> Returns True if <b>ONE</b> statement is true </td>
-	</tr>	
-	
-</table>
+| Operator | Description                                      |
+| -------- | ------------------------------------------------ |
+| AND      | Returns `True` only if ALL statements are `True` |
+| OR       | Returns `True` if one statement is `True`        |
+| NOT      | Returns `True` only if NO statements are `True`  |
+| XOR      | Returns `True` only if ONE statements is `True`  |
+
+
 
 #### Concatenation
 
@@ -453,15 +368,52 @@ Strings are expressions enclosed within quotation marks `"`. Strings can include
 
 #### String functions
 
+#### Get length of string
+
+| Purpose | Function | Example        | Expected Value |
+| ------- | -------- | -------------- | -------------- |
+| Length  | Len()    | `Len("Apple")` | 5              |
+
+#### Reversing a string
+
+| Purpose | Function     | Example               | Expected Value |
+| ------- | ------------ | --------------------- | -------------- |
+| Reverse | StrReverse() | `StrReverse("Apple")` | "elppA"        |
+
 #### Extract values from strings
 
-| Function            | Example              | Expected Value |
-| ------------------- | -------------------- | -------------- |
-| Extract from left   | `Left("Apple",3)`    | "App"          |
-| Extract from right  | `Right("Apple",3)`   | "ple"          |
-| Extract from middle | `Mid("Apple", 2, 4)` | "ppl"          |
+| Purpose             | Function | Example              | Expected Value |
+| ------------------- | -------- | -------------------- | -------------- |
+| Extract from left   | Left()   | `Left("Apple",3)`    | "App"          |
+| Extract from right  | RIght()  | `Right("Apple",3)`   | "ple"          |
+| Extract from middle | Mid()    | `Mid("Apple", 2, 4)` | "ppl"          |
 
+#### Case conversion
 
+| Purpose                | Function  | Example                          | Expected output |
+| ---------------------- | --------- | -------------------------------- | --------------- |
+| Convert to upper case  | UCase()   | `UCase("apple")`                 | "APPLE"         |
+| Convert to upper case  | StrConv() | `StrConv("apple", vbUpperCase)`  | "APPLE"         |
+| Convert to lower case  | LCase()   | `LCase("APPLE")`                 | "apple"         |
+| Convert to lower case  | StrConv() | `StrConv("APPLE", vbLowerCase)`  | "apple"         |
+| Convert to proper case | StrConv() | `StrConv("apple", vbProperCase)` | "Apple"         |
+
+#### Removing blank spaces
+
+| Purpose | Function | Example           | Expected Value |
+| ------- | -------- | ----------------- | -------------- |
+| Left    | LTrim()  | `LTrim(" Apple")` | "Apple"        |
+| Right   | RTrim()  | `RTrim("Apple ")` | "Apple"        |
+| Both    | Trim()   | `Trim(" Apple ")` | "Apple"        |
+
+#### Finding a substring
+
+Finding a substring within a string can be done with InStr() and InStrRev(). The only difference between the two is that InStrRev() searches from the end of the string. Both functions return the position of the first match found.
+
+| Function                              | Example                     | Expected Value |
+| ------------------------------------- | --------------------------- | -------------- |
+| InStr([optional], String 1, String 2) | InStr(4, "John Smith", "h") | 10             |
+| InStr(String 1, String 2)             | InStr("John Smith", "h")    | 3              |
 
 
 
