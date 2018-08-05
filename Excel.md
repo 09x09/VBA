@@ -15,13 +15,42 @@ Author: 09x09
 
 ## Table of Contents
 
-1. Terminology
+1. [Visual Basic Editor](#0)
+2. [Terminology](#1)
+3. [~~Basic~~ Syntax Reference](#2)
 
-2. [~~Basic~~ Syntax Reference](#2)
 
-   
+ 
+
+## 0. Visual Basic Editor<a name="0"></a>
+
+![](https://raw.githubusercontent.com/09x09/VBA-crash-course/master/images/vb%20editor.png)
+
+
+
+#### Visual Basic Editor
+
+The editor for any VBA code you may want to write. Accessible with `alt-F11`
+
+#### <span style="color:green">Properties Box </span>
+
+This is where you find the properties of the object you are working with! The most important one is the [name], which is the name used to refer to the object when you are coding!
+
+#### <span style = "color:red">Workspace</span>
+
+This is where you do your codes and stuff!
+
+
 
 ## 1. Terminology <a name="1"></a>
+
+#### [Name]
+
+The name assigned to an object in excel and used to refer to it. The first row in the properties tab in the Visual Basic Editor
+
+#### Name
+
+The visual name of the object. Does not have to be the same as the [name]
 
 #### R1C1 
 
