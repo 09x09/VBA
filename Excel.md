@@ -36,7 +36,6 @@ The editor for any VBA code you may want to write. Accessible with `alt-F11`
 
 This is where you find the properties of the object you are working with! The most important one is the [name], which is the name used to refer to the object when you are coding!
 
-<<<<<<< HEAD
 #### <font color="#ff0000">Workspace</font>
 This is where you do your codes and stuff!
 
