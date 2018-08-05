@@ -20,7 +20,7 @@ Author: 09x09
 3. [~~Basic~~ Syntax Reference](#2)
 
 
- 
+
 
 ## 0. Visual Basic Editor<a name="0"></a>
 
@@ -38,10 +38,6 @@ This is where you find the properties of the object you are working with! The mo
 
 <<<<<<< HEAD
 #### <font color="#ff0000">Workspace</font>
-=======
-#### <span style="color:red">Workspace</span>
->>>>>>> c5e69bbe1b9a06cd66559e978cb1cdc2dab70e6d
-
 This is where you do your codes and stuff!
 
 
