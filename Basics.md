@@ -390,7 +390,7 @@ Strings are expressions enclosed within quotation marks `"`. Strings can include
 | ------------------- | -------- | -------------------- | -------------- |
 | Extract from left   | Left()   | `Left("Apple",3)`    | "App"          |
 | Extract from right  | RIght()  | `Right("Apple",3)`   | "ple"          |
-| Extract from middle | Mid()    | `Mid("Apple", 2, 4)` | "ppl"          |
+| Extract from middle | Mid()    | `Mid("Apple", 2, 2)` | "ppl"          |
 
 #### Case conversion
 
