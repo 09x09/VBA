@@ -32,6 +32,8 @@ Learning how to program is always easiest when you have something to practice wi
 
     2.10 [Numbers](#2.10)
 
+    2.11 [Date and Time](#2.11)
+
     
 
 ## Introduction <a name="1"></a>
@@ -473,4 +475,42 @@ This will allow you to get expected results
 For more information on floating point arithmetic in excel 
 
 https://www.microsoft.com/en-us/microsoft-365/blog/2008/04/10/understanding-floating-point-precision-aka-why-does-excel-give-me-seemingly-wrong-answers/
+
+
+
+### Date and Time<a name="2.11"></a>
+
+Date and time in VBA can be expressed as a number or in conventional date and time formats we are familiar with
+
+#### Initialising a date object
+
+To initialise a date object we use the DateValue function
+
+```vb
+1. Dim someDate As Date
+2.
+3.someDate = DateValue("1 Jan 2018")
+```
+
+To initialise a time object we use the TimeValue function instead
+
+Internally, Excel stores dates and times as a number, which is the number of days since January 0, 1900. For example, 40 745 is the date 21/7/2011
+
+Manipulating dates and times can be useful, so here are the methods which are available!
+
+| Purpose                                        | Function                  | Example                      | Result               |
+| ---------------------------------------------- | ------------------------- | ---------------------------- | -------------------- |
+| Get year                                       | Year()                    | `Year(someDate)`             | 2018                 |
+| Get month                                      | Month()                   | `Month(someDate)`            | 1                    |
+| Get day                                        | Day()                     | `Day(someDate)`              | 1                    |
+| Add days to a date                             | DateAdd()                 | `DateAdd("d", 7, someDate)`  | 8/1/2018             |
+| Add months to a date                           | DateAdd()                 | `DateAdd("m", 7, someDate)`  | 1/8/2018             |
+| Add years to a date                            | DateAdd()                 | `DateAdd("y", 7, someDate)`  | 1/1/2025             |
+| Get current date and time                      | Now                       | `Msgbox Now`                 | 8/8/2018 10:48:15 AM |
+| Get Hour/Minutes/Seconds                       | Hour()/Minute()/Seconds() | -                            | -                    |
+| Difference between 2 dates (days/months/years) | DateDiff()                | `DateDiff("d",Date1, Date2)` | -                    |
+
+
+
+
 
