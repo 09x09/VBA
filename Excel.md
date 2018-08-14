@@ -88,23 +88,35 @@ Relative referencing in R1C1 is represented by square brackets `[]` around the n
 
 ### Range
 
-Range objects are possibly the most widely encountered and used objects when coding in VBA.  The methods and properties of the range object includes those mentioned above. 
+Range objects are possibly the most widely encountered and used objects when coding in VBA.  The methods and properties of the range object includes those mentioned above. When using a method or property of a range object, the method/property is applied to the whole range at once
 
 Below are some of the commonly used properties and methods. The full list can be found here: https://msdn.microsoft.com/en-us/VBA/Excel-VBA/articles/range-object-excel
 
 #### Methods
 
-|Method|Explanation|Example|
-||||
-||
+| Method           | Explanation                           | Example                                                      |
+| ---------------- | ------------------------------------- | ------------------------------------------------------------ |
+| RemoveDuplicates | Removes any duplicates within a range | https://msdn.microsoft.com/en-us/VBA/Excel-VBA/articles/range-removeduplicates-method-excel |
+| Table            | Create a data table from a range      | https://msdn.microsoft.com/en-us/VBA/Excel-VBA/articles/range-table-method-excel |
+|                  |                                       |                                                              |
+|                  |                                       |                                                              |
+|                  |                                       |                                                              |
+
+
 
 
 
 #### Properties
 
-| Properties | Example |
-| ---------- | ------- |
-|            |         |
+| Properties       | Explanation                                        |
+| ---------------- | -------------------------------------------------- |
+| Count/CountLarge | Returns number of cells in a range                 |
+| Column           | Column A returns 1, column B returns 2, and so on. |
+| ColumnWidth      | Gets/Sets the column width of a range to a value   |
+| RowHeight        | Gets/sets the row height of a range to a value     |
+|                  |                                                    |
+|                  |                                                    |
+|                  |                                                    |
 
 
 
